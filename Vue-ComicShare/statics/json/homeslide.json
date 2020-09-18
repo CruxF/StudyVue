@@ -1,0 +1,15 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "url": "",
+      "img": "../../statics/imgs/home/home01.jpg"
+    }, {
+      "url": "",
+      "img": "../../statics/imgs/home/home02.jpg"
+    }, {
+      "url": "",
+      "img": "../../statics/imgs/home/home03.jpg"
+    }
+  ]
+}

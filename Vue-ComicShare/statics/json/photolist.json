@@ -1,0 +1,31 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "id": 1,
+      "title": "《海贼王》",
+      "img_url": "../../statics/imgs/photo/photo01.jpg",
+      "zhaiyao": "该动漫是日本漫画家尾田荣一郎作画的少年漫画作品，在\"周刊少年Jump\"1997年34号开始连载。"
+    }, {
+      "id": 2,
+      "title": "《火影忍者》",
+      "img_url": "../../statics/imgs/photo/photo02.jpg",
+      "zhaiyao": "该动漫是日本漫画家岸本齐史的代表作，作品于1999年开始在《周刊少年JUMP》上连载。"
+    }, {
+      "id": 3,
+      "title": "《全职猎人》",
+      "img_url": "../../statics/imgs/photo/photo03.jpg",
+      "zhaiyao": "该动漫是日本漫画家富坚义博的一部漫画作品。作于1998年起在日本漫画杂志\"周刊少年Jump\"不定期连载."
+    }, {
+      "id": 4,
+      "title": "《犬夜叉》",
+      "img_url": "../../statics/imgs/photo/photo04.jpg",
+      "zhaiyao": "该动漫是日本漫画家高桥留美子于1996年开始在\"周刊少年Sunday\"杂志上连载，以描写战国童话故事为题材的长篇漫画"
+    }, {
+      "id": 5,
+      "title": "《进击的巨人》",
+      "img_url": "../../statics/imgs/photo/photo05.jpg",
+      "zhaiyao": "该动漫是日本漫画家谏山创创作的少年漫画作品，于2009年在讲谈社旗下的漫画杂志\"别册少年Magazine\"上开始连载。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "id": 1,
+      "title": "动漫被套床单",
+      "add_time": "2017-12-25",
+      "zhaiyao": "尺寸图样皆可以订制，如果在店铺展示页面没有喜欢的角色，可以咨询客服，查看图库，进行选取！",
+      "click": 30,
+      "img_url": "../../statics/imgs/goodslist/goodslist01.jpg",
+      "sell_price": 78,
+      "market_price": 68,
+      "stock_quantity": 200,
+      "goods_no": "SD13313123"
+    }, {
+      "id": 2,
+      "title": "二次元毛绒福袋",
+      "add_time": "2017-12-25",
+      "zhaiyao": "此优惠限5件，超出则该商品全部恢复非活动价",
+      "click": 33,
+      "img_url": "../../statics/imgs/goodslist/goodslist02.jpg",
+      "sell_price": 58,
+      "market_price": 63,
+      "stock_quantity": 500,
+      "goods_no": "SD13313123"
+    }, {
+      "id": 3,
+      "title": "逍遥宅品猫咪痛包",
+      "add_time": "2017-12-25",
+      "zhaiyao": "一共是一个外包+印花猫咪内包+纯色内包+肩带+手拎带。自由发挥自主搭配！带子之后会换成皮的！",
+      "click": 34,
+      "img_url": "../../statics/imgs/goodslist/goodslist03.jpg",
+      "sell_price": 57,
+      "market_price": 63,
+      "stock_quantity": 500,
+      "goods_no": "SD13313123"
+    }, {
+      "id": 4,
+      "title": "动漫周边保温杯",
+      "add_time": "2017-12-25",
+      "zhaiyao": "采用304不锈钢 双层真空内胆 保温久不烫手 支持来图定制 买就送杯套",
+      "click": 36,
+      "img_url": "../../statics/imgs/goodslist/goodslist04.jpg",
+      "sell_price": 80,
+      "market_price": 100,
+      "stock_quantity": 300,
+      "goods_no": "SD13313123"
+    }, {
+      "id": 5,
+      "title": "雪初音卫衣棉服",
+      "add_time": "2017-12-25",
+      "zhaiyao": "此优惠限5件，超出则该商品全部恢复非活动价",
+      "click": 63,
+      "img_url": "../../statics/imgs/goodslist/goodslist05.jpg",
+      "sell_price": 66,
+      "market_price": 80,
+      "stock_quantity": 300,
+      "goods_no": "SD13313123"
+    }, {
+      "id": 6,
+      "title": "Monchhichi萌趣趣",
+      "add_time": "2017-12-25",
+      "zhaiyao": "Monchhichi萌趣趣十二生肖狗鸡小兔马羊龙老虎猪小鸡公仔送人礼品",
+      "click": 38,
+      "img_url": "../../statics/imgs/goodslist/goodslist06.jpg",
+      "sell_price": 75,
+      "market_price": 90,
+      "stock_quantity": 800,
+      "goods_no": "SD13313123"
+    }
+  ]
+}

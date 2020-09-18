@@ -1,0 +1,42 @@
+{
+	"status": 0,
+	"message": [
+		{
+			"cou": 1,
+			"id": 1,
+			"title": "动漫被套床单",
+			"sell_price": 78,
+			"thumb_path": "../../statics/imgs/goodsinfo/lunbo01.jpg"
+		}, {
+			"cou": 1,
+			"id": 2,
+			"title": "二次元毛绒福袋",
+			"sell_price": 58,
+			"thumb_path": "../../statics/imgs/goodsinfo/lunbo04.jpg"
+		}, {
+			"cou": 1,
+			"id": 3,
+			"title": "逍遥宅品猫咪痛包",
+			"sell_price": 57,
+			"thumb_path": "../../statics/imgs/goodslist/goodslist03.jpg"
+		}, {
+			"cou": 1,
+			"id": 4,
+			"title": "动漫周边保温杯",
+			"sell_price": 80,
+			"thumb_path": "../../statics/imgs/goodslist/goodslist04.jpg"
+		}, {
+			"cou": 1,
+			"id": 5,
+			"title": "雪初音卫衣棉服",
+			"sell_price": 66,
+			"thumb_path": "../../statics/imgs/goodslist/goodslist05.jpg"
+		}, {
+			"cou": 1,
+			"id": 6,
+			"title": "Monchhichi萌趣趣",
+			"sell_price": 58,
+			"thumb_path": "../../statics/imgs/goodslist/goodslist06.jpg"
+		}
+	]
+}

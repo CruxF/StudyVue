@@ -1,0 +1,30 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "src": "../../statics/imgs/imginfo/haizei01.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/haizei02.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/haizei03.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/haizei04.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/haizei05.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/haizei06.jpg",
+      "h": 230,
+      "w": 300
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "src": "../../statics/imgs/imginfo/huoying01.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/huoying02.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/huoying03.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/huoying04.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/huoying05.jpg",
+      "h": 230,
+      "w": 300
+    }, {
+      "src": "../../statics/imgs/imginfo/huoying06.jpg",
+      "h": 230,
+      "w": 300
+    }
+  ]
+}

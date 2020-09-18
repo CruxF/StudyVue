@@ -1,0 +1,18 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "src": "../../statics/imgs/goodsinfo/lunbo04.jpg",
+      "url": "#",
+      "img": "../../statics/imgs/goodsinfo/lunbo04.jpg"
+    }, {
+      "src": "../../statics/imgs/goodsinfo/lunbo05.jpg",
+      "url": "#",
+      "img": "../../statics/imgs/goodsinfo/lunbo05.jpg"
+    }, {
+      "src": "../../statics/imgs/goodsinfo/lunbo06.jpg",
+      "url": "#",
+      "img": "../../statics/imgs/goodsinfo/lunbo06.jpg"
+    }
+  ]
+}

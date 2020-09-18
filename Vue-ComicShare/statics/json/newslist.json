@@ -1,0 +1,48 @@
+{
+  "status": 0,
+  "message": [
+    {
+      "id": 1,
+      "title": "《火影忍者》揭秘",
+      "add_time": "2017-12",
+      "zhaiyao": "《火影忍者》中诡异的战斗招式 效果令人毛骨悚然",
+      "click": 30,
+      "img_url": "../../statics/imgs/news/news01.jpg"
+    }, {
+      "id": 2,
+      "title": "将要被遗忘的经典动漫",
+      "add_time": "2017-11",
+      "zhaiyao": "童年优秀大作 盘点那些将要被遗忘的经典动画片",
+      "click": 25,
+      "img_url": "../../statics/imgs/news/news02.jpg"
+    }, {
+      "id": 3,
+      "title": "伊藤润二的世界",
+      "add_time": "2017-10",
+      "zhaiyao": "欢迎来到伊藤润二的世界 ",
+      "click": 38,
+      "img_url": "../../statics/imgs/news/news03.jpg"
+    }, {
+      "id": 4,
+      "title": "声优种田梨沙最新视频公布",
+      "add_time": "2017-10",
+      "zhaiyao": "声优种田梨沙最新视频公布 熟悉的大美女回来了",
+      "click": 51,
+      "img_url": "../../statics/imgs/news/news04.jpg"
+    }, {
+      "id": 5,
+      "title": "《阴阳师》手游2018",
+      "add_time": "2017-10",
+      "zhaiyao": "《阴阳师》手游泡面番2018年春季开播 开启欢乐日常",
+      "click": 11,
+      "img_url": "../../statics/imgs/news/news05.jpg"
+    }, {
+      "id": 6,
+      "title": "面向动画行业的虚拟货币",
+      "add_time": "2017-10",
+      "zhaiyao": "面向动画行业的虚拟货币，「宅币」正在准备第一次公开发行",
+      "click": 31,
+      "img_url": "../../statics/imgs/news/news06.jpg"
+    }
+  ]
+}
