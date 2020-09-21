@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <h1>虚拟DOM</h1>
+      <p>{{mes}}</p>
+    </div>
+
+    <script>
+      // 创建实例
+      let vm = new Vue({
+        el: "#demo",
+        data: {
+          mes: 'app'
+        },
+        mounted() {
+          setTimeout(() => {
+            this.mes = 'bpp'
+          }, 2000);
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+      .box {
+        width: 900px;
+        height: auto;
+        overflow: hidden;
+        margin: 30px auto;
+      }
+      .left {
+        height: 150px;
+        width: 185px;
+        padding: 5px;
+        display: inline-block;
+        border: 1px solid black;
+      }
+      .left input {
+        padding: 2px;
+        margin-top: 10px;
+      }
+      .right {
+        width: 600px;
+        height: auto;
+        display: inline-block;
+        margin-left: 30px;
+        vertical-align: top;
+      }
+      .right table {
+        border-collapse: collapse;
+        width: 580px;
+      }
+      .right table th {
+        background-color: green;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid black;
+        color: #FFFFFF;
+      }
+      .right table tr {
+        text-align: center;
+      }
+      .right table td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="box">
+        <div class="left">
+          <input type="text" placeholder="输入编号" v-model="id" />
+          <input type="text" placeholder="输入名称" v-model="name" /><br />
+          <input type="button" value="添加数据" @click="add" />
+          <input type="text" placeholder="搜索数据" v-model="search" />
+        </div>
+        <div class="right">
+          <table>
+            <tr>
+              <th>编号</th>
+              <th>品牌名称</th>
+              <th>创建时间</th>
+              <th>操作</th>
+            </tr>
+            <tr v-for="item in searchData">
+              <td>{{item.id}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.time | datefmt('yyyy-mm-dd HH:mm:ss')}}</td>
+              <td>
+                <a href="javascript:void(0)" @click="del(item.id)">删除</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //定义全局过滤器
+      Vue.filter("datefmt", function (input, formatstring) {
+        var result = "";
+        var year = input.getFullYear();
+        var month = input.getMonth() + 1;
+        var day = input.getDate();
+        var hour = input.getHours();
+        hour = hour < 10 ? "0" + hour : hour;
+        var minute = input.getMinutes();
+        minute = minute < 10 ? "0" + minute : minute;
+        if (formatstring == 'yyyy-mm-dd') {
+          result = year + "-" + month + "-" + day;
+        } else {
+          result = year + "-" + month + "-" + day + " " + hour + ":" + minute;
+        }
+        return result;
+      })
+      var vm = new Vue({
+        el: '#app',
+        data: {
+          id: '',
+          name: '',
+          search: '',
+          list: [{
+              "id": 1,
+              "name": "宝马",
+              "time": new Date()
+            },
+            {
+              "id": 2,
+              "name": "奔驰",
+              "time": new Date()
+            }
+          ]
+        },
+        methods: {
+          del: function (id) {
+            if (!confirm("是否删除数据？")) {
+              return;
+            }
+            //调用list.findIndex()方法，根据传入的id获取到这个要删除数据的索引值
+            var index = this.list.findIndex(function (item) {
+              return item.id == id;
+            });
+            //调用list.splice(删除的索引，删除的元素个数)
+            this.list.splice(index, 1);
+          },
+          add: function () {
+            //包装成list要求的对象
+            var tem = {
+              id: this.id,
+              name: this.name,
+              time: new Date()
+            };
+            //将tem追加到list数组中
+            this.list.push(tem);
+            //清空页面上的文本框中的数据
+            this.id = "";
+            this.name = "";
+          }
+        },
+        computed: {
+          searchData: function () {
+            var search = this.search;
+            if (search) {
+              return this.list.filter(function (name) {
+                return Object.keys(name).some(function (key) {
+                  return String(name[key]).toLowerCase().indexOf(search) > -1
+                })
+              })
+            }
+            return this.list;
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

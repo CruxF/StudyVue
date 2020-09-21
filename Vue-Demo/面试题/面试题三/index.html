@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <p v-for="item in list" :key="item">{{item}}</p>
+    </div>
+
+    <script>
+      // 创建实例
+      let vm = new Vue({
+        el: "#demo",
+        data: {
+          list: ['A','B','C','D','E','F']
+        },
+        mounted() {
+          setTimeout(() => {
+            this.list.splice(2, 0, 'G')
+          }, 2000);
+        }
+      })
+    </script>
+  </body>
+</html>

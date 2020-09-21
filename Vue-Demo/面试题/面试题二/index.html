@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <h1>vue组件data为什么必须是个函数？</h1>
+      <div>{{message}}</div>
+      <comp></comp>
+    </div>
+    <script>
+      // 创建组件
+      Vue.component('comp', {
+        template: `<div>{{count}}</div>`,
+        // data: {
+        //   count: '组件data是个函数'
+        // }
+        data() {
+          return {
+            count: '组件data是个函数'
+          }
+        }
+      })
+      // 创建实例
+      let vm = new Vue({
+        el: "#demo",
+        data: {
+          message: "根实例data是个对象"
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+      .box {
+        width: 900px;
+        height: auto;
+        overflow: hidden;
+        margin: 30px auto;
+      }
+      .left {
+        height: 150px;
+        width: 185px;
+        padding: 5px;
+        display: inline-block;
+        border: 1px solid black;
+      }
+      .left input {
+        padding: 2px;
+        margin-top: 10px;
+      }
+      .right {
+        width: 600px;
+        height: auto;
+        display: inline-block;
+        margin-left: 30px;
+        vertical-align: top;
+      }
+      .right table {
+        border-collapse: collapse;
+        width: 580px;
+      }
+      .right table th {
+        background-color: green;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid black;
+        color: #FFFFFF;
+      }
+      .right table tr {
+        text-align: center;
+      }
+      .right table td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="box">
+        <div class="left">
+          <input type="text" placeholder="输入编号" v-model="id" />
+          <input type="text" placeholder="输入名称" v-model="name" /><br />
+          <input type="button" value="添加数据" @click="add" />
+        </div>
+        <div class="right">
+          <table>
+            <tr>
+              <th>编号</th>
+              <th>品牌名称</th>
+              <th>创建时间</th>
+              <th>操作</th>
+            </tr>
+            <tr v-for="item in list">
+              <td>{{item.id}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.time}}</td>
+              <td>
+                <a href="javascript:void(0)" @click="del(item.id)">删除</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var vm = new Vue({
+        el: '#app',
+        data: {
+          id: '',
+          name: '',
+          list: [{
+              "id": 1,
+              "name": "宝马",
+              "time": new Date()
+            },
+            {
+              "id": 2,
+              "name": "奔驰",
+              "time": new Date()
+            }
+          ]
+        },
+        methods: {
+          del: function (id) {
+            if (!confirm("是否删除数据？")) {
+              return;
+            }
+            //调用list.findIndex()方法，根据传入的id获取到这个要删除数据的索引值
+            var index = this.list.findIndex(function (item) {
+              return item.id == id;
+            });
+            //调用list.splice(删除的索引，删除的元素个数)
+            this.list.splice(index, 1);
+          },
+          add: function () {
+            //包装成list要求的对象
+            var tem = {
+              id: this.id,
+              name: this.name,
+              time: new Date().toLocaleString()
+            };
+            //将tem追加到list数组中
+            this.list.push(tem);
+            //清空页面上的文本框中的数据
+            this.id = "";
+            this.name = "";
+          }
+        }
+      })
+    </script>
+  </body>

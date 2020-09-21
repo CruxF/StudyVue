@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <h1>v-for和v-if谁的优先级高？应该如何正确使用避免性能问题？</h1>
+      <div v-if="isFolder" v-for="child in children" :key="child.title">
+        {{child.title}}
+      </div>
+      <!-- <div v-if="isFolder">
+        <div v-for="child in children" :key="child.title">
+          {{child.title}}
+        </div>
+      </div> -->
+    </div>
+    <script>
+      let vm = new Vue({
+        el: "#demo",
+        data: {
+          children: [{
+            title: 'foo'
+          }, {
+            title: 'bar'
+          }]
+        },
+        computed: {
+          isFolder() {
+            return this.children && this.children.length > 0
+          }
+        }
+      })
+      console.log(vm.$options.render)
+    </script>
+  </body>
+</html>
